@@ -12,12 +12,12 @@ def ask_for_input(maxvalue):
     return user_number
 
 for i in range(10): #create loop that will repeat itself for i between 0 and 9
-    g= None
-    while a[i] != g: #loop checks every element of list a  against the value of user input g
+    user_input= None
+    while a[i] != user_input: #loop checks every element of list a  against the value of user input g
         g = ask_for_input(99)
-        if g < a[i]: #checks if input less than consecutive elements of list a
+        if user_input < a[i]: #checks if input less than consecutive elements of list a
             print("guess is low") #display message in console
-        elif g > a[i]: #otherwise if input more than consecutive elements of list a
+        elif user_input > a[i]: #otherwise if input more than consecutive elements of list a
             print("guess is high") #display message in console
     print("you guessed it!") #display message in console
 
@@ -25,11 +25,11 @@ b = []
 for i in range (TIMES_TO_PLAY):
     b.append(random.randint(1, 49))
 for i in range(10):
-    g = None
-    while a[i] != g: #loop checks every element of list a  against the value of user input g
-        g = ask_for_input(49)
-        if g < a[i]: #checks if input less than consecutive elements of list a
+    user_input = None
+    while a[i] != user_input: #loop checks every element of list a  against the value of user input g
+        user_input = ask_for_input(49)
+        if user_input < a[i]: #checks if input less than consecutive elements of list a
             print("guess is low") #display message in console
-        elif g > a[i]: #otherwise if input more than consecutive elements of list a
+        elif user_input > a[i]: #otherwise if input more than consecutive elements of list a
             print("guess is high") #display message in console
     print("you guessed it!")
