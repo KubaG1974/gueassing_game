@@ -1,11 +1,11 @@
-import random
+from random import randint
 TIMES_TO_PLAY = 10
 
 
 def generate_random_numbers_list(maxvalue):
     random_number_list = []
     for _ in range(TIMES_TO_PLAY):
-        random_number_list.append(random.randint(1,maxvalue))
+        random_number_list.append(randint(1,maxvalue))
         
     return random_number_list
     
