@@ -1,11 +1,15 @@
 import math
 import random
 TIMES_TO_PLAY = 10
+def generate_random_numbers_list(maxvalue):
+    random_number_list = []
+    for i in range(TIMES_TO_PLAY):
+        random_number_list.append(random.randint(1,maxvalue))
+        
+    return random_number_list
+    
 
-a = [] #declare empty list as variable a
-
-for i in range (TIMES_TO_PLAY):
-    a.append(random.randint(1, 99)) #append list with random int between 1 and 99
+a = generate_random_numbers_list(99)
 
 def ask_for_input(maxvalue):
     user_number = int(input(f"Enter an integer from 1 to {maxvalue}: "))
@@ -21,9 +25,7 @@ for i in range(10): #create loop that will repeat itself for i between 0 and 9
             print("guess is high") #display message in console
     print("you guessed it!") #display message in console
 
-b = []
-for i in range (TIMES_TO_PLAY):
-    b.append(random.randint(1, 49))
+b = generate_random_numbers_list(49)
 for i in range(10):
     user_input = None
     while a[i] != user_input: #loop checks every element of list a  against the value of user input g
