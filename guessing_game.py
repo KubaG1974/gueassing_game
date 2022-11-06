@@ -14,6 +14,9 @@ def ask_for_input(maxvalue):
     user_number = int(input(f"Enter an integer from 1 to {maxvalue}: "))
     return user_number
 
+def AIplayer():
+    pass
+
 def game_logic(maxvalue, random_number_list):
     random_numbers_list = generate_random_numbers_list(maxvalue)
     for i in range(TIMES_TO_PLAY):
