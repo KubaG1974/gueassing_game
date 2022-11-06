@@ -15,7 +15,7 @@ def ask_for_input(maxvalue):
     user_number = int(input(f"Enter an integer from 1 to {maxvalue}: "))
     return user_number
 
-for i in range(10): #create loop that will repeat itself for i between 0 and 9
+for i in range(TIMES_TO_PLAY): #create loop that will repeat itself for i between 0 and 9
     user_input= None
     while a[i] != user_input: #loop checks every element of list a  against the value of user input g
         g = ask_for_input(99)
@@ -26,7 +26,7 @@ for i in range(10): #create loop that will repeat itself for i between 0 and 9
     print("you guessed it!") #display message in console
 
 b = generate_random_numbers_list(49)
-for i in range(10):
+for i in range(TIMES_TO_PLAY):
     user_input = None
     while a[i] != user_input: #loop checks every element of list a  against the value of user input g
         user_input = ask_for_input(49)
