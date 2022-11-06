@@ -13,6 +13,9 @@ a.append(random.randint(1, 99))
 a.append(random.randint(1, 99))
 a.append(random.randint(1, 99))
 for i in range(TIME_TO_PLAY): #tworzymy pętle która będzie powtarzana w przedziale od 0 do 9
+    def ask_for_input(maxvalue):
+        user_number = int(input(f"Enter number from 1 to {maxvalue}:"))
+        return user_number
     g = int(input("Enter an integer from 1 to 99: ")) #pobieramy wpisywaną wartość od użytkownika, rzutujemy wartość na typ integer i przypisujemy zmienną
     while a[i] != g: #rozpoczynamy pętle która trwa dopóki element i z listy a jest różny od wartości pobranej od użytkownika
         if g < a[i]: #jeżeli wartość pobrana od użytkownika jest mniejsza od kolejnego elementu z listy a
